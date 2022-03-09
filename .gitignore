@@ -23,7 +23,7 @@
 hs_err_pid*
 
 #iml
-Exercicis 06 ProcedimentsFitxer.iml
+*.iml
 
 #out
 out/

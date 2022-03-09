@@ -9,6 +9,19 @@ public class Ex88 {
         return input.nextInt();
     }
 
+    public int Factorial(int number) {
+        if (number <= 0) {
+            return 0;
+        }
+        else {
+            int factorial = 1;
+            for(int i = 1; i <= number; i++){
+                factorial *= i;
+            }
+            return factorial;
+        }
+    }
+
     public static void main(String[] args) {
         int[] numbers = new int[0];
         int[] numbers2;
@@ -29,6 +42,11 @@ public class Ex88 {
             }
         }
 
+        for (int number : numbers) {
+            System.out.println(Main.Factorial(number));
+        }
+
+
 
 
     }
@@ -37,7 +55,7 @@ public class Ex88 {
 /*
 88. Desenvolupar un programa per tal de demanar un conjunt de números pel teclat, finalitzant la
 sèrie amb el 0. Una vegada tots els números introduïts caldrà dir per a cada número quin és el seu
-factorial. Caldrà desenvolupar els següent mètodes
+factorial. Caldrà desenvolupar els següents mètodes
 • int LlegirEnter();
-• int factorial(int numero); ‘ El factorial d’un número negatiu es 0
+• int factorial(int numero); ‘El factorial d’un nombre negatiu és 0
  */
