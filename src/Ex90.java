@@ -33,7 +33,6 @@ public class Ex90 {
         int[] numbers2;
         int counter = 0;
         int majors = 0;
-
         while (!stop) {
             int number = Main.Llegirenter();
             if (number != 0) {
@@ -45,12 +44,8 @@ public class Ex90 {
             }
             else stop = true;
         }
-
         double mitjana = Main.mitjana(numbers);
-
         for (int number : numbers) if (number < mitjana) majors ++;
-
         System.out.printf("Número més gran: %d\nNúmero més petit: %d\nMitjana: %5.4f\nHi han %d números més grans que la mitjana", Main.mesGran(numbers), Main.mesPetit(numbers), mitjana, majors);
-
     }
 }
